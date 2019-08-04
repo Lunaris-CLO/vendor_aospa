@@ -120,6 +120,10 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0.vendor \
     android.hidl.manager@1.0.vendor
 
+# Init
+PRODUCT_COPY_FILES += \
+    vendor/aospa/prebuilts/etc/init.aospa.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.aospa.rc
+
 # Java Optimizations
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 SYSTEM_OPTIMIZE_JAVA := true
