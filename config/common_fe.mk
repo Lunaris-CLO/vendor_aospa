@@ -20,6 +20,12 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     BtHelper
 
+# Charger
+PRODUCT_PACKAGES += \
+    charger_res_images \
+    product_charger_res_images \
+    product_charger_res_images_vendor
+
 # Quick Switch
 TARGET_DEFAULT_PIXEL_LAUNCHER := true
 ifeq ($(TARGET_DEFAULT_PIXEL_LAUNCHER), true)
