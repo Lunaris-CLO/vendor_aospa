@@ -153,6 +153,10 @@ PRODUCT_COPY_FILES += \
     vendor/aospa/target/config/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml \
     vendor/aospa/target/config/permissions/org.lineageos.health.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/org.lineageos.health.xml
 
+# Pixel
+PRODUCT_PACKAGES += \
+    CustomFontPixelLauncherOverlay 
+
 # Preinstalled Packages
 PRODUCT_COPY_FILES += \
     vendor/aospa/target/config/preinstalled-packages-aospa.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-aospa.xml
