@@ -1,0 +1,18 @@
+//
+// Copyright (C) 2023 Paranoid Android
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+android_app_import {
+    apk: "NexusLauncherRelease.apk",
+    name: "NexusLauncherRelease",
+    overrides: ["Launcher3", "Launcher3QuickStep", "TrebuchetQuickStep"],
+	presigned: true,
+	preprocessed: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
