@@ -76,6 +76,10 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.systemuicompilerfilter=speed
 
+# Disable broken OtaDexoptService
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    config.disable_otadexopt=true
+
 # Display
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     debug.sf.frame_rate_multiple_threshold=60 \
