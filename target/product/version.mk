@@ -43,11 +43,7 @@ endif
 AOSPA_BUILD_VARIANT := 2.0
 
 # Build Date
-ifneq ($(filter RELEASE BETA,$(AOSPA_BUILDTYPE)),)
-BUILD_DATE := $(shell date -u +%Y%m%d)
-else
 BUILD_DATE := $(shell date -u '+%Y%m%d-%H%M')
-endif
 
 # AOSPA Version
 AOSPA_VERSION := $(AOSPA_MAJOR_VERSION)-
