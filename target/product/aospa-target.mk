@@ -35,6 +35,10 @@ $(call inherit-product-if-exists, vendor/aospa-priv/target/product/aospa-priv-ta
 # Elegance
 $(call inherit-product-if-exists, vendor/overlays/Elegance/elegance.mk)
 
+# Apps
+PRODUCT_PACKAGES += \
+    GameSpace 
+
 # APNs
 ifneq ($(TARGET_NO_TELEPHONY), true)
 PRODUCT_COPY_FILES += \
