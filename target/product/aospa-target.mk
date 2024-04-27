@@ -28,6 +28,9 @@ $(call inherit-product, vendor/google/overlays/ThemeIcons/config.mk)
 # AOSPA private configuration - optional.
 $(call inherit-product-if-exists, vendor/aospa-priv/target/product/aospa-priv-target.mk)
 
+# Elegance
+$(call inherit-product-if-exists, vendor/overlays/Elegance/elegance.mk)
+
 # APNs
 ifneq ($(TARGET_NO_TELEPHONY), true)
 PRODUCT_COPY_FILES += \
@@ -80,10 +83,7 @@ PRODUCT_PACKAGES += \
     fsck.exfat \
     mkfs.exfat
 
-# Fonts
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,vendor/aospa/fonts/,$(TARGET_COPY_OUT_PRODUCT)/fonts) \
-    vendor/aospa/target/config/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml
+$(call inherit-product, external/google-fonts/lato/fonts.mk)
 
 # Gestures
 PRODUCT_PACKAGES += \
