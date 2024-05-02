@@ -39,6 +39,10 @@ $(call inherit-product-if-exists, vendor/addons/config.mk)
 PRODUCT_PACKAGES += \
     GameSpace 
 
+# OmniJaws
+PRODUCT_PACKAGES += \
+    OmniJaws
+
 # APNs
 ifneq ($(TARGET_NO_TELEPHONY), true)
 PRODUCT_COPY_FILES += \
