@@ -16,7 +16,8 @@
 <resources>
 
     <!-- Default Packages -->
-    <string name="wallpaper_picker_package" translatable="false">com.android.wallpaper</string>
+    <string name="wallpaper_picker_package" translatable="false">com.google.android.apps.wallpaper</string>
+    <string name="custom_activity_picker" translatable="false">com.android.customization.picker.CustomizationPickerActivity</string>
 
     <!-- config used to determine if header protection is supported in AllApps -->
     <bool name="config_header_protection_supported">true</bool>
