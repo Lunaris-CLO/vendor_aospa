@@ -24,7 +24,7 @@
 # This is the global AOSPA version flavor that determines the focal point
 # behind our releases. This is bundled alongside $(AOSPA_MINOR_VERSION)
 # and only changes per major Android releases.
-AOSPA_MAJOR_VERSION := vauxite
+AOSPA_MAJOR_VERSION := Cheesecake
 
 # The version code is the upgradable portion during the cycle of
 # every major Android release. Each version code upgrade indicates
@@ -40,17 +40,7 @@ endif
 # Alpha: Development / Test releases
 # Beta: Public releases with CI
 # Stable: Final Product | No Tagging
-ifdef AOSPA_BUILDTYPE
-  ifeq ($(AOSPA_BUILDTYPE), ALPHA)
-      AOSPA_BUILD_VARIANT := alpha
-  else ifeq ($(AOSPA_BUILDTYPE), BETA)
-      AOSPA_BUILD_VARIANT := beta
-  else ifeq ($(AOSPA_BUILDTYPE), STABLE)
-      AOSPA_BUILD_VARIANT := stable
-  endif
-else
-  AOSPA_BUILD_VARIANT := unofficial
-endif
+AOSPA_BUILD_VARIANT := 2.0
 
 # Build Date
 BUILD_DATE := $(shell date -u +%Y%m%d)
