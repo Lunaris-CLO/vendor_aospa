@@ -26,6 +26,9 @@ PRODUCT_PACKAGES += initial-package-stopped-states-aosp.xml
 # AOSPA Version.
 $(call inherit-product, vendor/aospa/target/product/version.mk)
 
+# Themedicons
+$(call inherit-product, vendor/google/overlays/ThemeIcons/config.mk)
+
 # AOSPA private configuration - optional.
 $(call inherit-product-if-exists, vendor/aospa-priv/target/product/aospa-priv-target.mk)
 
