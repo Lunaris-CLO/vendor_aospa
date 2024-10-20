@@ -73,6 +73,9 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.egl.blobcache.multifile=true \
     ro.egl.blobcache.multifile_limit=33554432
 
+# Extra vendor
+$(call inherit-product-if-exists, vendor/extra/product.mk)
+
 # Exfat FS
 PRODUCT_PACKAGES += \
     fsck.exfat \
