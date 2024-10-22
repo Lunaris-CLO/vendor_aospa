@@ -263,17 +263,19 @@ PRODUCT_PACKAGES += \
 PRODUCT_VENDOR_MOVE_ENABLED := true
 
 # Mainline spoofing
-PRODUCT_PRODUCT_PROPERTIES += \
+    PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.pihooks_mainline_BRAND?=google \
     persist.sys.pihooks_mainline_DEVICE?=caiman \
     persist.sys.pihooks_mainline_MANUFACTURER?=Google \
     persist.sys.pihooks_mainline_PRODUCT?=caiman \
-    ro.product.model_for_attestation?=Pixel 9 Pro \
-    ro.product.brand_for_attestation?=google \
-    ro.product.name_for_attestation?=caiman \
-    ro.product.device_for_attestation?=caiman \
-    ro.product.manufacturer_for_attestation?=Google
+    persist.sys.pihooks_BRAND?=google \
+    persist.sys.pihooks_MANUFACTURER?=Google \
+    persist.sys.pihooks_DEVICE?=tokay \
+    persist.sys.pihooks_PRODUCT?=tokay_beta \
+    persist.sys.pihooks_DEVICE_INITIAL_SDK_INT?=25 \
+    persist.sys.pihooks_SECURITY_PATCH?=2024-09-05 \
+    persist.sys.pihooks_ID?=AP41.240823.009
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PIHOOKS_BUILD_FINGERPRINT="google/caiman/caiman:14/AD1A.240905.004/12196292:user/release-keys" \
-    PIHOOKS_MODEL_SPOOF="Pixel 9 Pro"
+PIHOOKS_BUILD_GMS_FINGERPRINT := google/tokay_beta/tokay:15/AP41.240823.009/12329489:user/release-keys
+PIHOOKS_BUILD_FINGERPRINT := google/caiman/caiman:14/AD1A.240530.047.U1/12150698:user/release-keys
+PIHOOKS_MODEL_SPOOF := Pixel 9 Pro
