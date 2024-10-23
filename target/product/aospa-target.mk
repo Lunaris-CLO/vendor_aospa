@@ -62,7 +62,7 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
 DONT_DEXPREOPT_PREBUILTS := true
 
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    Launcher3QuickStep \
+    NexusLauncherRelease \
     ParanoidSystemUI \
     Settings 
 
