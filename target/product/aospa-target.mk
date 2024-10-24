@@ -32,8 +32,8 @@ $(call inherit-product, vendor/google/overlays/ThemeIcons/config.mk)
 # AOSPA private configuration - optional.
 $(call inherit-product-if-exists, vendor/aospa-priv/target/product/aospa-priv-target.mk)
 
-# Elegance
-$(call inherit-product-if-exists, vendor/overlays/Elegance/elegance.mk)
+# Include addons
+$(call inherit-product-if-exists, vendor/addons/config.mk)
 
 # Apps
 PRODUCT_PACKAGES += \
