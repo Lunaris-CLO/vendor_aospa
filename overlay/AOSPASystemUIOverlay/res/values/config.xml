@@ -37,8 +37,20 @@
     slot. If the user did make a choice, even if the choice is the "None" option, the default is
     ignored. -->
     <string-array name="config_keyguardQuickAffordanceDefaults" translatable="false">
-        <item>bottom_start:flashlight</item>
-        <item>bottom_end:camera</item>
+        <item>bottom_start:camera</item>
+        <item>bottom_end:flashlight</item>
     </string-array>
+
+    <!-- ThemePicker package name for overlaying icons. -->
+    <string name="themepicker_overlayable_package" translatable="false">com.google.android.apps.wallpaper</string>
+
+    <!-- Package name for the app that implements the wallpaper picker. -->
+    <string name="config_wallpaperPickerPackage" translatable="false">com.google.android.apps.wallpaper</string>
+
+     <!-- Whether or not lockscreen shortcuts can be customized -->
+    <bool name="custom_lockscreen_shortcuts_enabled">true</bool>
+
+    <!-- Whether or not long-pressing on keyguard will display to customize lockscreen -->
+    <bool name="long_press_keyguard_customize_lockscreen_enabled">true</bool>
 
 </resources>
