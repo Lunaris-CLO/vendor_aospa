@@ -54,6 +54,10 @@ WITH_DEXPREOPT_DEBUG_INFO := false
 # Boot Animation
 $(call inherit-product, vendor/aospa/bootanimation/bootanimation.mk)
 
+# blur
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.launcher.blur.appLaunch=0
+
 # curl
 PRODUCT_PACKAGES += \
     curl
