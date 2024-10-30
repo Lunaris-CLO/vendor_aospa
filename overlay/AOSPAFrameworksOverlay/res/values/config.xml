@@ -492,4 +492,43 @@
     <!-- The name of the package that will hold the dialer and sms role by default. -->
     <string name="config_defaultDialer" translatable="false">com.google.android.dialer</string>
     <string name="config_defaultSms" translatable="false">com.google.android.apps.messaging</string>
+
+    <!-- Package name(s) containing location provider support.
+         These packages can contain services implementing location providers,
+         such as the Geocode Provider, Network Location Provider, and Fused
+         Location Provider.
+         The signatures of packages named below and installed in the system
+         image are "allowed" signatures.
+         The location framework checks ALL installed packages if they provide
+         an implementation of a specific location provider and compares the
+         signature of the package with the list of allowed signatures.
+         The location framework has support for installation of new or
+         updated location providers at run-time. However the new package must
+         have a signature that matches the signature of at least one package
+         on this list which is installed in the system image.
+         The chosen package for the specific location provider does not
+         depend on the order of this list. -->
+    <string-array name="config_locationProviderPackageNames" translatable="false">
+        <!-- The Google provider -->
+        <item>com.google.android.gms</item>
+        <!-- The standard AOSP fused location provider -->
+        <item>com.android.location.fused</item>
+    </string-array>
+
+    <string-array name="config_locationExtraPackageNames" translatable="false">
+        <!-- Bluetooth -->
+        <item>com.android.bluetooth</item>
+        <!-- CneApp -->
+        <item>com.qualcomm.qti.cne</item>
+        <!-- ImsService -->
+        <item>com.shannon.imsservice</item>
+        <!-- OmniJaws -->
+        <item>org.omnirom.omnijaws</item>
+        <!-- SystemUI -->
+        <item>com.android.systemui</item>
+        <!-- Tethering -->
+        <item>com.android.networkstack.tethering</item>
+        <!-- GMS location history -->
+        <item>com.google.android.gms.location.history</item>
+    </string-array>
 </resources>
