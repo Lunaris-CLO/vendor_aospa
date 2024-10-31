@@ -7,7 +7,6 @@
 android_app_import {
     apk: "NexusLauncherRelease.apk",
     name: "NexusLauncherRelease",
-    overrides: ["Launcher3", "Launcher3QuickStep", "TrebuchetQuickStep"],
 	presigned: true,
 	preprocessed: true,
 	dex_preopt: {
