@@ -156,6 +156,19 @@ PRODUCT_PACKAGES += \
     ParanoidSystemUI \
     ParanoidThemePicker
 
+TARGET_DEFAULT_PIXEL_LAUNCHER ?= true
+ifeq ($(TARGET_DEFAULT_PIXEL_LAUNCHER), true)
+# Pixel Launcher
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.sys.default_launcher=1 \
+    persist.sys.quickswitch_pixel_shipped=1
+else
+# Launcher3
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.sys.default_launcher=0 \
+    persist.sys.quickswitch_pixel_shipped=0
+endif
+
 # Paranoid Sense
 PRODUCT_PACKAGES += \
     ParanoidSense
