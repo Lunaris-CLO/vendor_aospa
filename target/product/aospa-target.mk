@@ -113,8 +113,11 @@ ifneq ($(TARGET_EXCLUDE_GMODULES), true)
 $(call inherit-product-if-exists, vendor/google/modules/build/mainline_modules.mk)
 endif
 
+TARGET_DEFAULT_PIXEL_LAUNCHER ?= true
+ifeq ($(strip $(TARGET_DEFAULT_PIXEL_LAUNCHER)),true)
 PRODUCT_PACKAGES += \
     NexusLauncherRelease
+endif
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
