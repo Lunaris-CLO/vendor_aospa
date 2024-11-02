@@ -24,4 +24,20 @@
          -->
     <dimen name="status_bar_height_portrait">28dp</dimen>
 
+    <!-- Optimize notification scaling/rendering -->
+    <dimen name="media_notification_expanded_image_max_size">64dp</dimen>
+    <dimen name="notification_actions_icon_size">48dp</dimen>
+    <dimen name="notification_actions_icon_drawable_size">18dp</dimen>
+    <dimen name="notification_icon_circle_size">22dp</dimen>
+    <dimen name="notification_header_expand_icon_size">48dp</dimen>
+    <dimen name="notification_expand_button_pill_height">20dp</dimen>
+    <dimen name="notification_large_icon_width">48dp</dimen>
+    <dimen name="notification_large_icon_height">48dp</dimen>
+    <dimen name="media_notification_action_button_size">42dp</dimen>
+    <dimen name="keyguard_avatar_size">64dp</dimen>
+    <dimen name="notification_small_icon_size">36dp</dimen>
+    <dimen name="notification_right_icon_size">36dp</dimen>
+    <dimen name="messaging_avatar_size">36dp</dimen>
+    <dimen name="conversation_avatar_size">36dp</dimen>
+
 </resources>
