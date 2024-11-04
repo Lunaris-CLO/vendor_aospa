@@ -35,6 +35,9 @@ $(call inherit-product-if-exists, vendor/aospa-priv/target/product/aospa-priv-ta
 # Include addons
 $(call inherit-product-if-exists, vendor/addons/config.mk)
 
+# Include common config
+$(call inherit-product-if-exists, vendor/aospa/config/common_fe.mk)
+
 # Apps
 PRODUCT_PACKAGES += \
     AvatarPicker \
