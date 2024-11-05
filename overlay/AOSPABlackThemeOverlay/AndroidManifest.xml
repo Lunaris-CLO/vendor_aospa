@@ -23,7 +23,7 @@
         android:category="android.theme.customization.system_palette"
         android:priority="1"/>
     <application
-        android:label="@string/android_overlay_black"
+        android:label="Black theme"
         android:hasCode="false"/>
 
 </manifest>

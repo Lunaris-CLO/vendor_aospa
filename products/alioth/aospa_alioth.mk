@@ -30,9 +30,6 @@ PRODUCT_DEVICE := alioth
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := M2012K11AG
 
-PRODUCT_SYSTEM_PROPERTIES += \
-	ro.paranoid.maintainer=GHOST
-
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Boot animation resolution.
