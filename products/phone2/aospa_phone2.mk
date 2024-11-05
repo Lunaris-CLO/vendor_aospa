@@ -22,9 +22,6 @@ PRODUCT_MANUFACTURER := Nothing
 PRODUCT_MODEL := A065
 PRODUCT_NAME := aospa_phone2
 
-PRODUCT_SYSTEM_PROPERTIES += \
-    ro.paranoid.maintainer=GHOST | ゴースト
-
 # Bootanimation resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
