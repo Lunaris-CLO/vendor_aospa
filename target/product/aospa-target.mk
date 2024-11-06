@@ -34,16 +34,6 @@ $(call inherit-product-if-exists, vendor/addons/config.mk)
 # Include common config
 $(call inherit-product-if-exists, vendor/aospa/config/common_fe.mk)
 
-# Apps
-PRODUCT_PACKAGES += \
-    AvatarPicker \
-    OmniStyle \
-    GameSpace 
-
-# OmniJaws
-PRODUCT_PACKAGES += \
-    OmniJaws
-
 # APNs
 ifneq ($(TARGET_NO_TELEPHONY), true)
 PRODUCT_COPY_FILES += \
@@ -62,10 +52,6 @@ WITH_DEXPREOPT_DEBUG_INFO := false
 
 # Boot Animation
 $(call inherit-product, vendor/aospa/bootanimation/bootanimation.mk)
-
-# blur
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.launcher.blur.appLaunch=0
 
 # curl
 PRODUCT_PACKAGES += \
@@ -119,12 +105,6 @@ ifneq ($(TARGET_EXCLUDE_GMODULES), true)
 $(call inherit-product-if-exists, vendor/google/modules/build/mainline_modules.mk)
 endif
 
-TARGET_DEFAULT_PIXEL_LAUNCHER ?= true
-ifeq ($(strip $(TARGET_DEFAULT_PIXEL_LAUNCHER)),true)
-PRODUCT_PACKAGES += \
-    NexusLauncherRelease
-endif
-
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
      vendor/aospa/target/config/aospa_vendor_framework_compatibility_matrix.xml
@@ -162,19 +142,6 @@ $(call inherit-product-if-exists, vendor/aospa/translations/translations.mk)
 PRODUCT_PACKAGES += \
     ParanoidPapers \
     ParanoidSettings
-
-TARGET_DEFAULT_PIXEL_LAUNCHER ?= true
-ifeq ($(TARGET_DEFAULT_PIXEL_LAUNCHER), true)
-# Pixel Launcher
-PRODUCT_SYSTEM_PROPERTIES += \
-    persist.sys.default_launcher=1 \
-    persist.sys.quickswitch_pixel_shipped=1
-else
-# Launcher3
-PRODUCT_SYSTEM_PROPERTIES += \
-    persist.sys.default_launcher=0 \
-    persist.sys.quickswitch_pixel_shipped=0
-endif
 
 # Paranoid Sense
 PRODUCT_PACKAGES += \
@@ -295,21 +262,3 @@ PRODUCT_PACKAGES += \
     libwpa_client
 
 PRODUCT_VENDOR_MOVE_ENABLED := true
-
-# Mainline spoofing
-    PRODUCT_PRODUCT_PROPERTIES += \
-    persist.sys.pihooks_mainline_BRAND?=google \
-    persist.sys.pihooks_mainline_DEVICE?=caiman \
-    persist.sys.pihooks_mainline_MANUFACTURER?=Google \
-    persist.sys.pihooks_mainline_PRODUCT?=caiman \
-    persist.sys.pihooks_BRAND?=google \
-    persist.sys.pihooks_MANUFACTURER?=Google \
-    persist.sys.pihooks_DEVICE?=akita \
-    persist.sys.pihooks_PRODUCT?=akita_beta \
-    persist.sys.pihooks_DEVICE_INITIAL_SDK_INT?=21 \
-    persist.sys.pihooks_SECURITY_PATCH?=2024-10-05 \
-    persist.sys.pihooks_ID?=AP41.240925.009
-
-PIHOOKS_BUILD_GMS_FINGERPRINT := google/akita_beta/akita:15/AP41.240925.009/12534705:user/release-keys
-PIHOOKS_BUILD_FINGERPRINT := google/caiman/caiman:14/AD1A.240530.047.U1/12150698:user/release-keys
-PIHOOKS_MODEL_SPOOF := Pixel 9 Pro
