@@ -161,9 +161,7 @@ $(call inherit-product-if-exists, vendor/aospa/translations/translations.mk)
 
 # Paranoid Packages
 PRODUCT_PACKAGES += \
-    ParanoidPapers \
-    ParanoidSystemUI \
-    ParanoidThemePicker
+    ParanoidPapers 
 
 TARGET_DEFAULT_PIXEL_LAUNCHER ?= true
 ifeq ($(TARGET_DEFAULT_PIXEL_LAUNCHER), true)
