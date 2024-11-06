@@ -34,6 +34,7 @@ $(call inherit-product-if-exists, vendor/addons/config.mk)
 # Apps
 PRODUCT_PACKAGES += \
     AvatarPicker \
+    OmniStyle \
     GameSpace 
 
 # OmniJaws
