@@ -528,4 +528,7 @@
         <!-- GMS location history -->
         <item>com.google.android.gms.location.history</item>
     </string-array>
+
+    <!-- Artwork bitmap size -->
+    <integer name="config_maxBitmapSizePx">440</integer>
 </resources>
