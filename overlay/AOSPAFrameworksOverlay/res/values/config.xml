@@ -586,5 +586,5 @@
     </string-array>
 
     <!-- Artwork bitmap size -->
-    <integer name="config_maxBitmapSizePx">440</integer>
+    <integer name="config_maxBitmapSizePx">500</integer>
 </resources>
