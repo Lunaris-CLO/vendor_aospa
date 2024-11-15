@@ -216,15 +216,15 @@ elif [ "${KEY_MAPPINGS}" ]; then
     echo -e "${CLR_BLD_BLU}Signing target files apks${CLR_RST}"
     sign_target_files_apks -o -d $KEY_MAPPINGS \
         "$OUT"/obj/PACKAGING/target_files_intermediates/aospa_$DEVICE-target_files.zip \
-        Paranoid-$AOSPA_VERSION-signed-target_files.zip
+        Lunaris-OS-$AOSPA_VERSION-signed-target_files.zip
 
     checkExit
 
     echo -e "${CLR_BLD_BLU}Generating signed install package${CLR_RST}"
     ota_from_target_files -k $KEY_MAPPINGS/releasekey \
         --block ${INCREMENTAL} \
-        Paranoid-$AOSPA_VERSION-signed-target_files.zip \
-        Paranoid-$AOSPA_VERSION.zip
+        Lunaris-OS-$AOSPA_VERSION-signed-target_files.zip \
+        Lunaris-OS-$AOSPA_VERSION.zip
 
     checkExit
 
@@ -236,16 +236,16 @@ elif [ "${KEY_MAPPINGS}" ]; then
         fi
         ota_from_target_files -k $KEY_MAPPINGS/releasekey \
             --block --incremental_from $DELTA_TARGET_FILES \
-            Paranoid-$AOSPA_VERSION-signed-target_files.zip \
-            Paranoid-$AOSPA_VERSION-delta.zip
+            Lunaris-OS-$AOSPA_VERSION-signed-target_files.zip \
+            Lunaris-OS-$AOSPA_VERSION-delta.zip
         checkExit
     fi
 
     if [ "$FLAG_IMG_ZIP" = 'y' ]; then
         echo -e "${CLR_BLD_BLU}Generating signed fastboot package${CLR_RST}"
         img_from_target_files \
-            Paranoid-$AOSPA_VERSION-signed-target_files.zip \
-            Paranoid-$AOSPA_VERSION-image.zip
+            Lunaris-OS-$AOSPA_VERSION-signed-target_files.zip \
+            Lunaris-OS-$AOSPA_VERSION-image.zip
         checkExit
     fi
 # Build rom package
@@ -257,14 +257,14 @@ elif [ "$FLAG_IMG_ZIP" = 'y' ]; then
     echo -e "${CLR_BLD_BLU}Generating install package${CLR_RST}"
     ota_from_target_files \
         "$OUT"/obj/PACKAGING/target_files_intermediates/aospa_$DEVICE-target_files.zip \
-        Paranoid-$AOSPA_VERSION.zip
+        Lunaris-OS-$AOSPA_VERSION.zip
 
     checkExit
 
     echo -e "${CLR_BLD_BLU}Generating fastboot package${CLR_RST}"
     img_from_target_files \
         "$OUT"/obj/PACKAGING/target_files_intermediates/aospa_$DEVICE-target_files.zip \
-        Paranoid-$AOSPA_VERSION-image.zip
+        Lunaris-OS-$AOSPA_VERSION-image.zip
 
     checkExit
 
@@ -273,8 +273,8 @@ else
 
     checkExit
 
-    cp -f $OUT/aospa_$DEVICE-ota.zip $OUT/Paranoid-$AOSPA_VERSION.zip
-    echo "Package Complete: $OUT/Paranoid-$AOSPA_VERSION.zip"
+    cp -f $OUT/aospa_$DEVICE-ota.zip $OUT/Lunaris-OS-$AOSPA_VERSION.zip
+    echo "Package Complete: $OUT/Lunaris-OS-$AOSPA_VERSION.zip"
 fi
 echo -e ""
 
