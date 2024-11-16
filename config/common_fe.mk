@@ -9,13 +9,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.launcher.blur.appLaunch=0
 
-# Pixel Launcher
-TARGET_DEFAULT_PIXEL_LAUNCHER ?= true
-ifeq ($(strip $(TARGET_DEFAULT_PIXEL_LAUNCHER)),true)
-PRODUCT_PACKAGES += \
-    NexusLauncherRelease
-endif
-
 # Quick Switch
 ifeq ($(TARGET_DEFAULT_PIXEL_LAUNCHER), true)
 # Pixel Launcher
@@ -53,7 +46,6 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/etc/textclassifier/lang_id.model \
     system/etc/textclassifier/textclassifier.en.model \
     system/etc/textclassifier/textclassifier.universal.model
-
 
 # Face unlock
 TARGET_FACE_UNLOCK_SUPPORTED ?= true
