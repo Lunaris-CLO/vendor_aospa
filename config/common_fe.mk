@@ -5,11 +5,16 @@ PRODUCT_PACKAGES += \
     OmniJaws \
     GameSpace 
 
+# Aperture Camera
+PRODUCT_PACKAGES += \
+    Aperture
+
 # blur
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.launcher.blur.appLaunch=0
 
 # Quick Switch
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
 ifeq ($(TARGET_DEFAULT_PIXEL_LAUNCHER), true)
 # Pixel Launcher
 PRODUCT_SYSTEM_PROPERTIES += \
