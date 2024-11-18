@@ -237,7 +237,7 @@ elif [ "${KEY_MAPPINGS}" ]; then
  	echo "${CLR_BLD_GRN}OTA zip Complete:${CLR_RST} aospa-$AOSPA_VERSION.zip${CLR_RST}"
         echo "${CLR_BLD_GRN}SIZE:${CLR_RST} $IMG_SIZE bytes"
         echo "${CLR_BLD_GRN}SHA256:${CLR_RST} $IMG_SHA256"
-	echo "${CLR_BLD_GRN}BUILD STAMP:${CLR_RST}: $UTCSTAMP"
+	echo "${CLR_BLD_GRN}BUILD STAMP:${CLR_RST} $UTCSTAMP"
     fi
     checkExit
 
@@ -267,7 +267,7 @@ elif [ "${KEY_MAPPINGS}" ]; then
 	echo "${CLR_BLD_GRN}OTA zip Complete:${CLR_RST} aospa-$AOSPA_VERSION.zip${CLR_RST}"
         echo "${CLR_BLD_GRN}SIZE:${CLR_RST} $IMG_SIZE bytes"
         echo "${CLR_BLD_GRN}SHA256:${CLR_RST} $IMG_SHA256"
-        echo "${CLR_BLD_GRN}BUILD STAMP:${CLR_RST}: $UTCSTAMP"
+        echo "${CLR_BLD_GRN}BUILD STAMP:${CLR_RST} $UTCSTAMP"
         checkExit
     fi
 
