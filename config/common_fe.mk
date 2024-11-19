@@ -35,13 +35,13 @@ endif
     persist.sys.pihooks_mainline_PRODUCT?=caiman \
     persist.sys.pihooks_BRAND?=google \
     persist.sys.pihooks_MANUFACTURER?=Google \
-    persist.sys.pihooks_DEVICE?=akita \
-    persist.sys.pihooks_PRODUCT?=akita_beta \
-    persist.sys.pihooks_DEVICE_INITIAL_SDK_INT?=21 \
-    persist.sys.pihooks_SECURITY_PATCH?=2024-10-05 \
-    persist.sys.pihooks_ID?=AP41.240925.009
+    persist.sys.pihooks_DEVICE?=cheetah \
+    persist.sys.pihooks_PRODUCT?=cheetah_beta \
+    persist.sys.pihooks_DEVICE_INITIAL_SDK_INT?=25 \
+    persist.sys.pihooks_SECURITY_PATCH?=2024-11-05 \
+    persist.sys.pihooks_ID?=BP11.241025.006
 
-PIHOOKS_BUILD_GMS_FINGERPRINT := google/akita_beta/akita:15/AP41.240925.009/12534705:user/release-keys
+PIHOOKS_BUILD_GMS_FINGERPRINT := google/cheetah_beta/cheetah:15/BP11.241025.006/12620009:user/release-keys
 PIHOOKS_BUILD_FINGERPRINT := google/caiman/caiman:14/AD1A.240530.047.U1/12150698:user/release-keys
 PIHOOKS_MODEL_SPOOF := Pixel 9 Pro
 
