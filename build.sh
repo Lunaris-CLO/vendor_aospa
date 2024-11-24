@@ -186,7 +186,7 @@ checkExit
 echo -e ""
 
 # Custom Vars
-export OTA_FILE="aospa-$AOSPA_VERSION.zip"
+export OTA_FILE="Lunaris-OS-$AOSPA_VERSION.zip"
 
 # Perform installclean, if requested so
 if [ "$FLAG_INSTALLCLEAN_BUILD" = 'y' ]; then
@@ -234,7 +234,7 @@ elif [ "${KEY_MAPPINGS}" ]; then
         IMG_SHA256=$(sha256sum "$OTA_FILE" | awk '{print $1}')
 	UTCSTAMP=$(grep 'ro.build.date.utc=' "$OUT"/system/build.prop | sed 's/^.*=//')
 	echo ""
- 	echo "${CLR_BLD_GRN}OTA zip Complete:${CLR_RST} aospa-$AOSPA_VERSION.zip${CLR_RST}"
+ 	echo "${CLR_BLD_GRN}OTA zip Complete:${CLR_RST} Lunaris-OS-$AOSPA_VERSION.zip${CLR_RST}"
         echo "${CLR_BLD_GRN}SIZE:${CLR_RST} $IMG_SIZE bytes"
         echo "${CLR_BLD_GRN}SHA256:${CLR_RST} $IMG_SHA256"
 	echo "${CLR_BLD_GRN}BUILD STAMP:${CLR_RST} $UTCSTAMP"
@@ -259,12 +259,13 @@ elif [ "${KEY_MAPPINGS}" ]; then
         img_from_target_files \
             Lunaris-OS-$AOSPA_VERSION-signed-target_files.zip \
             Lunaris-OS-$AOSPA_VERSION-image.zip
+
 	IMG_SIZE=$(ls -nl "$OTA_FILE" | awk '{print $5}')
         IMG_SHA256=$(sha256sum "$OTA_FILE" | awk '{print $1}')
 	UTCSTAMP=$(grep 'ro.build.date.utc=' "$OUT"/system/build.prop | sed 's/^.*=//')
 	echo ""
-	echo "${CLR_BLD_GRN}Fastboot Zip:${CLR_RST} aospa-$AOSPA_VERSION-img.zip"
-	echo "${CLR_BLD_GRN}OTA zip Complete:${CLR_RST} aospa-$AOSPA_VERSION.zip${CLR_RST}"
+	echo "${CLR_BLD_GRN}Fastboot Zip:${CLR_RST} Lunaris-OS-$AOSPA_VERSION-img.zip"
+	echo "${CLR_BLD_GRN}OTA zip Complete:${CLR_RST} Lunaris-OS-$AOSPA_VERSION.zip${CLR_RST}"
         echo "${CLR_BLD_GRN}SIZE:${CLR_RST} $IMG_SIZE bytes"
         echo "${CLR_BLD_GRN}SHA256:${CLR_RST} $IMG_SHA256"
         echo "${CLR_BLD_GRN}BUILD STAMP:${CLR_RST} $UTCSTAMP"
@@ -296,8 +297,15 @@ else
 
     checkExit
 
-    cp -f $OUT/aospa_$DEVICE-ota.zip $OUT/Lunaris-$AOSPA_VERSION.zip
-    echo "OTA zip Complete: $OUT/Lunaris-$AOSPA_VERSION.zip"
+    cp -f $OUT/aospa_$DEVICE-ota.zip $OUT/Lunaris-OS-$AOSPA_VERSION.zip
+
+    IMG_SIZE=$(ls -nl "$OUT/Lunaris-OS-$AOSPA_VERSION.zip" | awk '{print $5}')
+    IMG_SHA256=$(sha256sum "$OUT/Lunaris-OS-$AOSPA_VERSION.zip" | awk '{print $1}')
+    UTCSTAMP=$(grep 'ro.build.date.utc=' "$OUT"/system/build.prop | sed 's/^.*=//')
+    echo "${CLR_BLD_GRN}OTA zip Complete:${CLR_RST} $OUT/Lunaris-OS-$AOSPA_VERSION.zip"
+    echo "${CLR_BLD_GRN}SIZE:${CLR_RST} $IMG_SIZE bytes"
+    echo "${CLR_BLD_GRN}SHA256:${CLR_RST} $IMG_SHA256"
+    echo "${CLR_BLD_GRN}BUILD STAMP:${CLR_RST} $UTCSTAMP"
 fi
 echo -e ""
 
