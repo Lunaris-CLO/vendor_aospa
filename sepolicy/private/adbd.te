@@ -1,0 +1,3 @@
+allow adbd adbroot:binder call;
+allow adbd adbroot_service:service_manager find;
+
