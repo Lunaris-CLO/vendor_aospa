@@ -263,6 +263,13 @@ PRODUCT_BOOT_JARS += \
     telephony-ext
 endif
 
+# Updater
+PRODUCT_PACKAGES += \
+    Updater \
+    update_engine \
+    update_verifier \
+    update_engine_sideload
+
 # TextClassifier
 PRODUCT_PACKAGES += \
     libtextclassifier_annotator_en_model \
