@@ -69,7 +69,7 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     Launcher3QuickStep \
     NexusLauncherRelease \
     SystemUI \
-    ParanoidSettings 
+    LunarisSettings 
 
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.systemuicompilerfilter=speed
@@ -140,7 +140,7 @@ $(call inherit-product-if-exists, vendor/aospa/translations/translations.mk)
 # Paranoid Packages
 PRODUCT_PACKAGES += \
     ParanoidPapers \
-    ParanoidSettings
+    LunarisSettings
 
 # Paranoid Sense
 PRODUCT_PACKAGES += \
