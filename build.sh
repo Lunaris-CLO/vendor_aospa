@@ -232,7 +232,7 @@ elif [ "${KEY_MAPPINGS}" ]; then
     if [ -z "$FLAG_IMG_ZIP" ]; then
         IMG_SIZE=$(ls -nl "$OTA_FILE" | awk '{print $5}')
         IMG_MD5=$(md5sum "$OTA_FILE" | awk '{print $1}')
-	UTCSTAMP=$(grep 'ro.build.date.utc=' "$OUT"/system/build.prop | sed 's/^.*=//')
+	UTCSTAMP=$(grep 'ro.system.build.date.utc=' "$OUT"/system/build.prop | sed 's/^.*=//')
 	echo ""
  	echo "${CLR_BLD_GRN}OTA zip Complete:${CLR_RST} Lunaris-OS-$AOSPA_VERSION.zip${CLR_RST}"
         echo "${CLR_BLD_GRN}SIZE:${CLR_RST} $IMG_SIZE bytes"
@@ -262,7 +262,7 @@ elif [ "${KEY_MAPPINGS}" ]; then
 
 	IMG_SIZE=$(ls -nl "$OTA_FILE" | awk '{print $5}')
         IMG_MD5=$(md5sum "$OTA_FILE" | awk '{print $1}')
-	UTCSTAMP=$(grep 'ro.build.date.utc=' "$OUT"/system/build.prop | sed 's/^.*=//')
+	UTCSTAMP=$(grep 'ro.system.build.date.utc=' "$OUT"/system/build.prop | sed 's/^.*=//')
 	echo ""
 	echo "${CLR_BLD_GRN}Fastboot Zip:${CLR_RST} Lunaris-OS-$AOSPA_VERSION-img.zip"
 	echo "${CLR_BLD_GRN}OTA zip Complete:${CLR_RST} Lunaris-OS-$AOSPA_VERSION.zip${CLR_RST}"
@@ -301,7 +301,7 @@ else
 
     IMG_SIZE=$(ls -nl "$OUT/Lunaris-OS-$AOSPA_VERSION.zip" | awk '{print $5}')
     IMG_MD5=$(md5sum "$OUT/Lunaris-OS-$AOSPA_VERSION.zip" | awk '{print $1}')
-    UTCSTAMP=$(grep 'ro.build.date.utc=' "$OUT"/system/build.prop | sed 's/^.*=//')
+    UTCSTAMP=$(grep 'ro.system.build.date.utc=' "$OUT"/system/build.prop | sed 's/^.*=//')
     echo "${CLR_BLD_GRN}OTA zip Complete:${CLR_RST} $OUT/Lunaris-OS-$AOSPA_VERSION.zip"
     echo "${CLR_BLD_GRN}SIZE:${CLR_RST} $IMG_SIZE bytes"
     echo "${CLR_BLD_GRN}MD5:${CLR_RST} $IMG_MD5"
