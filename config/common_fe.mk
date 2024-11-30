@@ -3,7 +3,9 @@ PRODUCT_PACKAGES += \
     AvatarPicker \
     OmniStyle \
     OmniJaws \
-    GameSpace 
+    GameSpace  \
+    LMOFreeform \
+    LMOFreeformSidebar
 
 # Aperture Camera
 PRODUCT_PACKAGES += \
