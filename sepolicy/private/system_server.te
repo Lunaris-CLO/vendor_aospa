@@ -20,3 +20,6 @@ hal_client_domain(system_server, hal_lineage_health)
 allow system_server zygote_tmpfs:file rw_file_perms;
 
 allow system_server adbroot_service:service_manager find;
+
+# Freeform
+add_service(system_server, lmo_freeform_service);
