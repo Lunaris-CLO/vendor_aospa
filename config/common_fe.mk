@@ -5,7 +5,8 @@ PRODUCT_PACKAGES += \
     OmniJaws \
     GameSpace  \
     LMOFreeform \
-    LMOFreeformSidebar
+    LMOFreeformSidebar \
+    CustomDoze
 
 # Aperture Camera
 PRODUCT_PACKAGES += \
