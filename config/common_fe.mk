@@ -42,9 +42,9 @@ $(call inherit-product-if-exists, packages/services/VncFlinger/product.mk)
 # Mainline spoofing
     PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.pihooks_mainline_BRAND?=google \
-    persist.sys.pihooks_mainline_DEVICE?=caiman \
+    persist.sys.pihooks_mainline_DEVICE?=komodo \
     persist.sys.pihooks_mainline_MANUFACTURER?=Google \
-    persist.sys.pihooks_mainline_PRODUCT?=caiman \
+    persist.sys.pihooks_mainline_PRODUCT?=komodo \
     persist.sys.pihooks_BRAND?=google \
     persist.sys.pihooks_MANUFACTURER?=Google \
     persist.sys.pihooks_DEVICE?=cheetah \
@@ -54,8 +54,8 @@ $(call inherit-product-if-exists, packages/services/VncFlinger/product.mk)
     persist.sys.pihooks_ID?=BP11.241025.006
 
 PIHOOKS_BUILD_GMS_FINGERPRINT := google/cheetah_beta/cheetah:15/BP11.241025.006/12620009:user/release-keys
-PIHOOKS_BUILD_FINGERPRINT := google/caiman/caiman:14/AD1A.240530.047.U1/12150698:user/release-keys
-PIHOOKS_MODEL_SPOOF := Pixel 9 Pro
+PIHOOKS_BUILD_FINGERPRINT := google/komodo/komodo:15/AP4A.241205.013/12621605:user/release-keys
+PIHOOKS_MODEL_SPOOF := Pixel 9 Pro XL
 
 # TextClassifier
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
