@@ -609,4 +609,7 @@
 
     <!-- Artwork bitmap size -->
     <integer name="config_maxBitmapSizePx">500</integer>
+
+    <!-- Circle to search -->
+    <string name="config_defaultContextualSearchPackageName" translatable="false">com.google.android.googlequicksearchbox</string>
 </resources>
