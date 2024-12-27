@@ -47,13 +47,13 @@ $(call inherit-product-if-exists, packages/services/VncFlinger/product.mk)
     persist.sys.pihooks_mainline_PRODUCT?=komodo \
     persist.sys.pihooks_BRAND?=google \
     persist.sys.pihooks_MANUFACTURER?=Google \
-    persist.sys.pihooks_DEVICE?=cheetah \
-    persist.sys.pihooks_PRODUCT?=cheetah_beta \
-    persist.sys.pihooks_DEVICE_INITIAL_SDK_INT?=25 \
-    persist.sys.pihooks_SECURITY_PATCH?=2024-11-05 \
-    persist.sys.pihooks_ID?=BP11.241025.006
+    persist.sys.pihooks_DEVICE?=komodo \
+    persist.sys.pihooks_PRODUCT?=komodo_beta \
+    persist.sys.pihooks_DEVICE_INITIAL_SDK_INT?=35 \
+    persist.sys.pihooks_SECURITY_PATCH?=2024-12-05 \
+    persist.sys.pihooks_ID?=BP11.241121.010
 
-PIHOOKS_BUILD_GMS_FINGERPRINT := google/cheetah_beta/cheetah:15/BP11.241025.006/12620009:user/release-keys
+PIHOOKS_BUILD_GMS_FINGERPRINT := google/komodo_beta/komodo:15/BP11.241121.010/12780007:user/release-keys
 PIHOOKS_BUILD_FINGERPRINT := google/komodo/komodo:15/AP4A.241205.013/12621605:user/release-keys
 PIHOOKS_MODEL_SPOOF := Pixel 9 Pro XL
 
