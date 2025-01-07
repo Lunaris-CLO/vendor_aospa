@@ -43,6 +43,8 @@ $(call inherit-product-if-exists, packages/services/VncFlinger/product.mk)
     PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.pihooks_mainline_BRAND?=google \
     persist.sys.pihooks_mainline_DEVICE?=komodo \
+    persist.sys.pihooks_mainline_HARDWARE?=komodo \
+    persist.sys.pihooks_mainline_ID?=AP4A.241205.013 \
     persist.sys.pihooks_mainline_MANUFACTURER?=Google \
     persist.sys.pihooks_mainline_PRODUCT?=komodo \
     persist.sys.pihooks_BRAND?=google \
