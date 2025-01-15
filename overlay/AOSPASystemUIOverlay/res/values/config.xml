@@ -52,5 +52,8 @@
 
     <!-- Whether or not long-pressing on keyguard will display to customize lockscreen -->
     <bool name="long_press_keyguard_customize_lockscreen_enabled">true</bool>
+    
+    <!-- Biometric Dialog values -->
+    <integer name="biometric_dialog_text_gravity">1</integer> <!-- CENTER_HORIZONTAL -->
 
 </resources>
