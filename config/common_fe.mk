@@ -16,6 +16,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.launcher.blur.appLaunch=0
 
+# BtHelper
+PRODUCT_PACKAGES += \
+    BtHelper
+
 # Quick Switch
 TARGET_DEFAULT_PIXEL_LAUNCHER := true
 ifeq ($(TARGET_DEFAULT_PIXEL_LAUNCHER), true)
