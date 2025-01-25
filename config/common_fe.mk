@@ -83,6 +83,10 @@ ifneq ($(TARGET_FACE_UNLOCK_SUPPORTED),false)
 PRODUCT_PACKAGES += \
     FaceUnlock
 
+# Quick Tap
+PRODUCT_PACKAGES += \
+    ColumbusService
+
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.face.sense_service=true
 
