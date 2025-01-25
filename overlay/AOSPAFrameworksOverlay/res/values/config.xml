@@ -627,6 +627,10 @@
     <!-- Artwork bitmap size -->
     <integer name="config_maxBitmapSizePx">500</integer>
 
+    <!-- If this is true, long press on power button will be available from a
+         non-interactive state. -->
+    <bool name="config_supportLongPressPowerWhenNonInteractive">true</bool>
+
     <!-- Circle to search -->
     <string name="config_defaultContextualSearchPackageName" translatable="false">com.google.android.googlequicksearchbox</string>
 </resources>
