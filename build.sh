@@ -204,11 +204,12 @@ echo -e ""
 
 # Build kernel platform if it exists and the kernel version is supported
 if [ -d "$DIR_ROOT/kernel_platform/" ] && (
-        [ "${TARGET_KERNEL_VERSION}" != "4.4" ]
-        && [ "${TARGET_KERNEL_VERSION}" != "4.9" ]
-        && [ "${TARGET_KERNEL_VERSION}" != "4.14" ]
-        && [ "${TARGET_KERNEL_VERSION}" != "4.19" ]
-        && [ "${TARGET_KERNEL_VERSION}" != "5.4" ] ); then
+   [ "${TARGET_KERNEL_VERSION}" != "4.4" ] &&
+   [ "${TARGET_KERNEL_VERSION}" != "4.9" ] &&
+   [ "${TARGET_KERNEL_VERSION}" != "4.14" ] &&
+   [ "${TARGET_KERNEL_VERSION}" != "4.19" ] &&
+   [ "${TARGET_KERNEL_VERSION}" != "5.4" ] ); then
+
     EXTRA_KERNEL_FLAGS=""
     if [ "${BUILD_TYPE}" = "user" ]; then
         EXTRA_KERNEL_FLAGS+=' LTO="full"'
