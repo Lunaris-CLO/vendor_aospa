@@ -32,6 +32,9 @@ $(call inherit-product, vendor/google/overlays/ThemeIcons/config.mk)
 # AOSPA private configuration - optional.
 $(call inherit-product-if-exists, vendor/aospa-priv/target/product/aospa-priv-target.mk)
 
+# Audio
+include vendor/aospa/audio/config.mk
+
 # Include addons
 $(call inherit-product-if-exists, vendor/addons/config.mk)
 
