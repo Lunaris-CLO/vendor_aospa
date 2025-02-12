@@ -26,6 +26,10 @@ PRODUCT_PACKAGES += \
     product_charger_res_images \
     product_charger_res_images_vendor
 
+# Enable wireless Xbox 360 controller support
+PRODUCT_COPY_FILES += \
+    frameworks/base/data/keyboards/Vendor_045e_Product_028e.kl:system/usr/keylayout/Vendor_045e_Product_0719.kl
+
 # Quick Switch
 TARGET_DEFAULT_PIXEL_LAUNCHER := true
 ifeq ($(TARGET_DEFAULT_PIXEL_LAUNCHER), true)
