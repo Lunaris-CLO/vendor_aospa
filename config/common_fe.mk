@@ -12,10 +12,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Aperture
 
-# blur
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.launcher.blur.appLaunch=0
-
 # BtHelper
 PRODUCT_PACKAGES += \
     BtHelper
