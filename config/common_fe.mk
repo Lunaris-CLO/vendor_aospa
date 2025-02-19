@@ -84,6 +84,10 @@ ifneq ($(TARGET_FACE_UNLOCK_SUPPORTED),false)
 PRODUCT_PACKAGES += \
     FaceUnlock
 
+# Storage manager
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.storage_manager.enabled=true
+
 # Quick Tap
 PRODUCT_PACKAGES += \
     ColumbusService
