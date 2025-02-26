@@ -55,6 +55,7 @@ PRODUCT_SYSTEM_PROPERTIES += \
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 PRODUCT_SYSTEM_SERVER_DEBUG_INFO := false
 WITH_DEXPREOPT_DEBUG_INFO := false
+USE_DEX2OAT_DEBUG := false
 
 PRODUCT_COPY_FILES += \
     vendor/aospa/prebuilts/misc/Effect_Tick.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/Effect_Tick.ogg
