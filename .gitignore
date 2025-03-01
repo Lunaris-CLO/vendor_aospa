@@ -6,7 +6,3 @@ prebuilt/
 
 # AOSPA translations
 translations/
-
-# AOSPA Signing keys
-build/security/*
-!build/security/BUILD.bazel
