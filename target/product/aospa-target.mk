@@ -49,7 +49,7 @@ endif
 
 # Audio
 PRODUCT_SYSTEM_PROPERTIES += \
-    ro.config.media_vol_steps=30
+    ro.config.media_vol_steps=15
 
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
