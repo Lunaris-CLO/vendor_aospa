@@ -89,6 +89,25 @@ ifneq ($(TARGET_FACE_UNLOCK_SUPPORTED),false)
 PRODUCT_PACKAGES += \
     FaceUnlock
 
+# Logging
+SPAMMY_LOG_TAGS := \
+    SDM \
+    DisplayModeController \
+    ForegroundUtils \
+    BaseDepthController \
+    Diag_Lib \
+    InetDiagMessage \
+    AHAL \
+    IPACM \
+    statsd \
+    minksocket \
+    FileUtils
+
+ifneq ($(TARGET_BUILD_VARIANT),eng)
+PRODUCT_VENDOR_PROPERTIES += \
+    $(foreach tag,$(SPAMMY_LOG_TAGS),log.tag.$(tag)=S)
+endif
+
 # Storage manager
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.storage_manager.enabled=true
