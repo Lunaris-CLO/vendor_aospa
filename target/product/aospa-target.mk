@@ -178,6 +178,7 @@ PRODUCT_COPY_FILES += \
 
 # Pixel
 PRODUCT_PACKAGES += \
+    NfcOverlay \
     CustomFontPixelLauncherOverlay 
 
 # Preinstalled Packages
