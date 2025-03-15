@@ -33,7 +33,6 @@ OVERRIDE_DISABLE_DEXOPT_ALL := false
 
 # Apps
 PRODUCT_PACKAGES += \
-    AvatarPicker \
     OmniStyle \
     OmniJaws \
     GameSpace  \
