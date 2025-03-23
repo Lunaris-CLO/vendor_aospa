@@ -137,6 +137,7 @@ SPAMMY_LOG_TAGS := \
     IPACM \
     statsd \
     minksocket \
+    Smart5gService \
     FileUtils
 
 ifneq ($(TARGET_BUILD_VARIANT),eng)
