@@ -767,7 +767,7 @@
     </string-array>
 
     <!-- Artwork bitmap size -->
-    <integer name="config_maxBitmapSizePx">500</integer>
+    <integer name="config_maxBitmapSizePx">480</integer>
 
     <!-- If this is true, long press on power button will be available from a
          non-interactive state. -->
