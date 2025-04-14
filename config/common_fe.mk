@@ -167,3 +167,11 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
 # Quick Tap
 PRODUCT_PACKAGES += \
     ColumbusService
+
+AXION_CPU_SMALL_CORES ?= 0,1,2,3
+AXION_CPU_BIG_CORES ?= 4,5,6,7
+
+# AxionOS properties
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.sys.axion_cpu_big=$(AXION_CPU_BIG_CORES) \
+    persist.sys.axion_cpu_small=$(AXION_CPU_SMALL_CORES)
