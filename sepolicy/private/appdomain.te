@@ -1,1 +1,3 @@
 get_prop(appdomain, pih_disable_prop)
+
+allow appdomain zygote:unix_stream_socket getopt;
