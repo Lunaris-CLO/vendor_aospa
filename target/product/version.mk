@@ -24,7 +24,7 @@
 # This is the global AOSPA version flavor that determines the focal point
 # behind our releases. This is bundled alongside $(AOSPA_MINOR_VERSION)
 # and only changes per major Android releases.
-AOSPA_MAJOR_VERSION := Sakura
+AOSPA_MAJOR_VERSION := Mizūmi
 
 # The version code is the upgradable portion during the cycle of
 # every major Android release. Each version code upgrade indicates
@@ -40,7 +40,7 @@ endif
 # Alpha: Development / Test releases
 # Beta: Public releases with CI
 # Stable: Final Product | No Tagging
-AOSPA_BUILD_VARIANT := 2.9
+AOSPA_BUILD_VARIANT := 2.10
 
 # Build Date
 BUILD_DATE := $(shell date -u '+%Y%m%d-%H%M')
