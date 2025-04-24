@@ -175,3 +175,10 @@ AXION_CPU_BIG_CORES ?= 4,5,6,7
 PRODUCT_SYSTEM_PROPERTIES += \
     persist.sys.axion_cpu_big=$(AXION_CPU_BIG_CORES) \
     persist.sys.axion_cpu_small=$(AXION_CPU_SMALL_CORES)
+
+# TFLite service.
+PRODUCT_PACKAGES += libtensorflowlite_jni
+
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/lib/libtensorflowlite_jni.so \
+    system/lib64/libtensorflowlite_jni.so
