@@ -182,3 +182,5 @@ PRODUCT_PACKAGES += libtensorflowlite_jni
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/lib/libtensorflowlite_jni.so \
     system/lib64/libtensorflowlite_jni.so
+
+TARGET_PRODUCT_PROP += vendor/aospa/config/gameprops.prop
