@@ -184,3 +184,6 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/lib64/libtensorflowlite_jni.so
 
 TARGET_PRODUCT_PROP += vendor/aospa/config/gameprops.prop
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.sys.device_power_mode=default
