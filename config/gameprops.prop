@@ -177,3 +177,7 @@ persist.sys.gameprops.com.vng.codmvn.BRAND?=Sony
 persist.sys.gameprops.com.vng.codmvn.DEVICE?=Xperia 5
 persist.sys.gameprops.com.vng.codmvn.MANUFACTURER?=Sony
 persist.sys.gameprops.com.vng.codmvn.MODEL?=SO-52A
+persist.sys.gameprops.com.proxima.dfm.BRAND?=Asus
+persist.sys.gameprops.com.proxima.dfm.DEVICE?=ROG Phone 6D
+persist.sys.gameprops.com.proxima.dfm.MANUFACTURER?=Asus
+persist.sys.gameprops.com.proxima.dfm.MODEL?=asus_ai2203_c
