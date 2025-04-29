@@ -103,10 +103,10 @@ $(call inherit-product-if-exists, packages/services/VncFlinger/product.mk)
     persist.sys.pihooks_DEVICE?=tokay \
     persist.sys.pihooks_PRODUCT?=tokay_beta \
     persist.sys.pihooks_DEVICE_INITIAL_SDK_INT?=21 \
-    persist.sys.pihooks_SECURITY_PATCH?=2025-03-05 \
-    persist.sys.pihooks_ID?=BP22.250221.015
+    persist.sys.pihooks_SECURITY_PATCH?=2025-04-05 \
+    persist.sys.pihooks_ID?=BP22.250325.007
 
-PIHOOKS_BUILD_GMS_FINGERPRINT := google/tokay_beta/tokay:16/BP22.250221.015/13278879:user/release-keys
+PIHOOKS_BUILD_GMS_FINGERPRINT := google/tokay_beta/tokay:16/BP22.250325.007/13352765:user/release-keys
 PIHOOKS_BUILD_GMS_MODEL := Pixel 9
 PIHOOKS_BUILD_FINGERPRINT := google/komodo/komodo:15/BP1A.250405.007/13240079:user/release-keys
 PIHOOKS_MODEL_SPOOF := Pixel 9 Pro XL
