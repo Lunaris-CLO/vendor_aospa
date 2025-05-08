@@ -95,7 +95,7 @@ $(call inherit-product-if-exists, packages/services/VncFlinger/product.mk)
     persist.sys.pihooks_mainline_BRAND?=google \
     persist.sys.pihooks_mainline_DEVICE?=komodo \
     persist.sys.pihooks_mainline_HARDWARE?=komodo \
-    persist.sys.pihooks_mainline_ID?=BP1A.250405.007 \
+    persist.sys.pihooks_mainline_ID?=BP1A.250505.005 \
     persist.sys.pihooks_mainline_MANUFACTURER?=Google \
     persist.sys.pihooks_mainline_PRODUCT?=komodo \
     persist.sys.pihooks_BRAND?=google \
@@ -108,7 +108,7 @@ $(call inherit-product-if-exists, packages/services/VncFlinger/product.mk)
 
 PIHOOKS_BUILD_GMS_FINGERPRINT := google/tokay_beta/tokay:16/BP22.250325.007/13352765:user/release-keys
 PIHOOKS_BUILD_GMS_MODEL := Pixel 9
-PIHOOKS_BUILD_FINGERPRINT := google/komodo/komodo:15/BP1A.250405.007/13240079:user/release-keys
+PIHOOKS_BUILD_FINGERPRINT := google/komodo/komodo:15/BP1A.250505.005/13277524:user/release-keys
 PIHOOKS_MODEL_SPOOF := Pixel 9 Pro XL
 
 # TextClassifier
