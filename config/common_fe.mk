@@ -38,7 +38,8 @@ PRODUCT_PACKAGES += \
     GameSpace  \
     LMOFreeform \
     LMOFreeformSidebar \
-    CustomDoze
+    CustomDoze \
+    MULS_Dummy
 
 # Aperture Camera
 PRODUCT_PACKAGES += \
