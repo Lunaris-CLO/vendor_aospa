@@ -70,6 +70,7 @@
         <item>com.android.systemui.clocks</item>
         <item>com.android.systemui.clocks.debug</item>
         <item>com.android.systemui.clocks.bignum</item>
+        <item>com.android.systemui.clocks.bignum2</item>
         <item>com.android.systemui.clocks.calligraphy</item>
         <item>com.android.systemui.clocks.flex</item>
         <item>com.android.systemui.clocks.growth</item>
@@ -78,6 +79,7 @@
         <item>com.android.systemui.clocks.metro</item>
         <item>com.android.systemui.clocks.numoverlap</item>
         <item>com.android.systemui.clocks.weather</item>
+        <item>com.libremobileos.clock</item>
     </string-array>
 
 </resources>

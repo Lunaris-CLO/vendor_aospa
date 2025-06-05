@@ -38,6 +38,7 @@ PRODUCT_PACKAGES += \
     GameSpace  \
     LMOFreeform \
     LMOFreeformSidebar \
+    LMOSystemUIClock \
     CustomDoze \
     MULS_Dummy
 
