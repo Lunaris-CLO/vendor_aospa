@@ -31,3 +31,6 @@ allow system_server adbroot_service:service_manager find;
 add_service(system_server, lmo_freeform_service);
 
 allow system_server shell:unix_stream_socket getopt;
+
+# Refresh Rate Manager
+add_service(system_server, refresh_rate_manager_service);
